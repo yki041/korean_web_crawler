@@ -129,7 +129,7 @@ class ArticleCrawler(object):
                 post.append(line.a.get('href'))  # 해당되는 page에서 모든 기사들의 URL을 post 리스트에 넣음
             del post_temp
             num_news_urls += len(post)
-            continue
+            
             for content_url in tqdm(post, desc="content in {}".format(url)):
                 # 기사 url
                 time.sleep(0.01)
